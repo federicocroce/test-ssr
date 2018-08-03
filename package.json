@@ -1,0 +1,27 @@
+{
+  "name": "test-ssr",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "can-ndjson-stream": "^0.1.6",
+    "can-zone": "^0.6.12",
+    "can-zone-jsdom": "^1.1.0",
+    "done-ssr": "^1.2.0-beta.1",
+    "donejs-spdy": "^3.4.7",
+    "express": "^4.16.1",
+    "ignore-styles": "^5.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "server": "NODE_ENV=development KEY=~/.localhost-ssl/server.key CERT=~/.localhost-ssl/server.cert node server/index.js",
+    "server:debug": "NODE_ENV=development KEY=~/.localhost-ssl/server.key CERT=~/.localhost-ssl/server.cert node --inspect-brk server/index.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
